@@ -1,1 +1,237 @@
-afasdf
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+body,td,span,em,select,label,button,input,ol, dl, dd, p, ul{margin:0;padding:0}
+ol, menu, ul {list-style: none outside none;}
+#reg_wrapper{background-color: #FFFFFF;height: auto;width: 470px; margin-top:30px;}
+#reg_wrapper dd {
+  height: 62px;
+  position: relative;
+}
+.reg-wrap{ margin-left:50px;}
+.quc-clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+form.cmxform label {
+  float:left;
+  color: #000000;
+  display: inline-block;
+  font-size: 14px;
+  height: 41px;
+  line-height: 41px;
+  margin-right: 10px;
+  text-align: right;
+  width: 60px;
+}
+#reg_wrapper .input-bg ,#reg_wrapper .btn-register{
+    background: url("http://p0.qhimg.com/t010b91f5a3bf414507.png") no-repeat;
+}
+#reg_wrapper .btn-register{
+  border: 0 none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "MicroSoft YaHei";
+  font-size: 16px;
+  height: 38px;
+  margin: 10px 0 0 120px;
+  outline: medium none;
+  width: 269px;
+  background-position: -268px -2px;
+}
+#reg_wrapper .input-bg{
+  float:left;
+  display: inline-block;
+  height: 38px;
+  padding-left: 5px;
+  position: relative;
+  width: 265px;
+  background-position: -2px -159px;
+}
+#reg_wrapper .input-bg .ipt {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: medium none;
+  font: 14px/20px arial,simsun;
+  height: 26px;
+  margin-top: 2px;
+  outline: 0 none;
+  padding: 6px 3px 0;
+  width: 250px;
+}
+/*validate.css start*/
+form.cmxform label.error {
+    display: inline-block;
+    margin: 5px;
+    _margin-top: 0px;
+    vertical-align: middle;
+    color: red;
+    background: none;
+    height: 19px;
+    line-height: 19px;
+    width: auto;
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+form.cmxform .tip {
+    vertical-align: top;
+    background: url("http://p5.qhimg.com/d/_e/img/validation/btn.png") no-repeat -184px -103px transparent;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin: 5px;
+    _margin-top: 0px;
+    vertical-align: middle;
+}
+form.cmxform .loading {
+    vertical-align: top;
+    background: url("http://p8.qhimg.com/d/_e/img/validation/loading.gif") no-repeat transparent;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 5px;
+    _margin-top: 0px;
+    vertical-align: middle;
+}
+form.cmxform .va_no {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5px;
+    _padding-top: 6px;
+    color: #F30;
+    float: none;
+}
+form.cmxform .va_tip {
+    vertical-align: top;
+    color: #666666;
+    margin-left: 5px;
+}
+form.cmxform .error_tip {
+    vertical-align: top;
+    color: #F30;
+    margin-left: 5px;
+}
+form.cmxform .error_tip span.tip {
+    background: url("http://p5.qhimg.com/d/_e/img/validation/btn.png") no-repeat -165px -88px;
+}
+form.cmxform .va_yes {
+    vertical-align: top;
+    background: url("http://p5.qhimg.com/d/_e/img/validation/btn.png") no-repeat scroll -184px -81px transparent;
+    display: inline-block;
+    height: 22px;
+    margin: 0 3px 0 10px;
+    width: 14px;
+}
+form.cmxform div.error {
+    display: none;
+}
+form.cmxform input.checkbox {
+    border: none
+}
+form.cmxform input:focus, textarea:focus, select:focus {
+    border: 1px dotted #B5B5B5;
+}
+form.cmxform input.error, textarea.error, select.error {
+    color: #F00
+}
+form.cmxform .gray * {
+    color: gray;
+}
+form.cmxform .errorpos label.error {
+    position: absolute;
+    top: -2px;
+    left: 200px;
+    width: 200px;
+}
+form.cmxform select {
+    border: 1px solid #CDCDCD;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px #F1F1F1 inset;
+    font-family: "Arial";
+    padding: 6px 2px;
+    width: 128px;
+}
+/*validate.css end*/
+</style>
+</head>
+<body>
+<div id="reg_wrapper">
+    <form action="" class="cmxform" name="regForm" method="post" id="regForm">
+        <dl class="reg-wrap">
+            <dt></dt>
+            <dd>
+                <div class="quc-clearfix reg-item">
+                    <label for="companyName">公司全称</label>
+                    <span class="input-bg">
+                    <input type="text" class="required ipt tipinput" name="companyName" id="companyName" maxlength="60" tabindex="1" placeholder="2-30个字：英文、数字或中文" title="*">
+                    </span></div>
+            </dd>
+            <dd>
+                <div class="quc-clearfix reg-item">
+                    <label for="webUrl">公司网址</label>
+                    <span class="input-bg">
+                    <input type="text" class="required ipt tipinput url" name="webUrl" id="webUrl" maxlength="200" tabindex="2" placeholder="如：http://e.360.cn/" title="*"/>
+                    </span></div>
+            </dd>
+            <dd>
+                <div class="quc-clearfix reg-item">
+                    <label for="address">公司地址</label>
+                    <span class="input-bg">
+                    <input type="text" class="required ipt tipinput" name="address" id="address" placeholder="不超过100个汉字" maxlength="200" tabindex="5" title="*" />
+                    </span></div>
+            </dd>
+            <dd>
+                <div class="quc-clearfix reg-item">
+                    <label for="contact">联系人</label>
+                    <span class="input-bg">
+                    <input type="text" class="required ipt tipinput" name="contact" id="contact" maxlength="32" tabindex="6" placeholder="请输入您的真实姓名" title="*"/>
+                    </span></div>
+            </dd>
+            <dd>
+                <div class="quc-clearfix reg-item">
+                    <label for="telephone">联系电话</label>
+                    <span class="input-bg">
+                    <input type="text" class="required ipt tipinput digits" name="telephone" id="telephone" placeholder="请输入您的座机或手机号码" minlength="11" maxlength="12" tabindex="7" title="*"/>
+                    </span> </div>
+            </dd>
+            <dd>
+                <div class="quc-clearfix reg-item" id="map_baidu">
+                    <label for="loginEmail">电子邮箱</label>
+                    <span class="input-bg">
+                    <input type="text" class="required ipt tipinput email" maxlength="100" name="loginEmail" id="loginEmail" tabindex="8" placeholder="请输入邮箱如：e@360.cn" title="*"/>
+                    </span></div>
+            </dd>
+        </dl>
+        <input type="submit" onfocus="this.blur()" text="0" id="next_step" value="默认formsubmit提交" class="submit btn-register" tabindex="9" />
+        <input type="submit" onfocus="this.blur()" text="1" id="next_step" value="改用其它方式提交" class="submit btn-register" tabindex="9" />
+    </form>
+</div>
+<script src="http://s0.qhimg.com/lib/jquery/172.js"></script> 
+<script src="http://s8.qhimg.com/!0cf8c762/static/jquery.validate.js" type="text/javascript"></script> 
+<script>
+$(function(){
+    $('#regForm').validate({
+        submitHandler: function(o) {
+            if($(':submit.submit').attr('text') == 0){
+                //default submit method
+                $(o).submit();
+            }else{
+                var sArg = $(o).serialize();
+                //post data
+                $.post('url***',sArg,function(data){
+                    if(data.status == 1){
+                        alert('success');
+                    }
+                },'json');
+            }
+        }
+    })
+})
+</script>
+</body>
+</html>
